@@ -1,26 +1,29 @@
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { AppRegistry } from 'react-native';
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Loginpage from './Loginpage';
 
-export default function Fristpage({ navigation }) {
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            navigation.navigate(Loginpage); 
-          }, 5000);
-          return () => clearTimeout(timer);
-        }, [navigation]);
-    
-    return (
+function Fristpage() {
+  const [shouldRedirect, setShouldRedirect] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShouldRedirect(true);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (shouldRedirect) {
+    return <Loginpage />;
+  }
+
+  return (
     <View style={styles.container}>
-      <Text>Welcome to Sign Languags Appication</Text>
-      <Image source={require("./images/handsign.png")} style={styles.image}
-      />
+      <Text>Welcome to Sign Languages Application</Text>
+      <Image source={require('./images/handsign.png')} style={styles.image} />
     </View>
   );
 }
-
-AppRegistry.registerComponent(Loginpage ,() => Fristpage);
 
 const styles = StyleSheet.create({
   container: {
@@ -29,8 +32,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  image :{
-    marginBottom: 30
-  }
+  image: {
+    marginBottom: 30,
+  },
 });
 
+export default Fristpage;

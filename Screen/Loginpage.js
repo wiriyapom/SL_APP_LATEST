@@ -12,10 +12,9 @@ export default function Loginpage() {
       <Text>Login ka</Text>
       <Text>Username or Email</Text>
       <Text>Password</Text>
-      <Button title='Sign in' color="" onPress={() => Alert.alert('Seccess')}/>
-      <Button>Sign up</Button>
+      {/* <Button title='Sign in' color="" onPress={() => Alert.alert('Seccess')}/>
+      <Button>Sign up</Button> */}
       <Text>Reset Password</Text>
-      <StatusBar style="auto" />
     </View>
   );
 }
