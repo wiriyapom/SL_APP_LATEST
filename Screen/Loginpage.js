@@ -9,7 +9,7 @@ import { StyleSheet, Text, View , TextInput, TouchableOpacity, ImageBackground, 
 export default function Loginpage() {
     return (
     <View style={styles.container}>
-      <Text>Login ka</Text>
+      <Text>Login</Text>
       <Text>Username or Email</Text>
       <Text>Password</Text>
       {/* <Button title='Sign in' color="" onPress={() => Alert.alert('Seccess')}/>

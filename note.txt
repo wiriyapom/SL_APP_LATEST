@@ -1,0 +1,13 @@
+1.create framwork react native
+     npx react-native init SL_APP_latest --template react-native-template-typescript
+
+2. ติดตั้ง Android studio 
+    https://youtu.be/4nz5VL3Cyng?si=6h0gD8NqfD8c2QCX
+    //แก้ปัญหา ไม่มีไฟล์ tools https://www.youtube.com/watch?v=2QAK6Dxsae8
+
+3.run react-native connext Android studio
+< https://www.youtube.com/watch?v=8Ek9ggLDb9o&list=PLl0iraDjDQgQjURRmhZ_2HGZdJlVy8lIg >
+    3.1)รัน Android studio
+        -คำสั่งรันโปรแกรมเพื่อใช้พัฒนาแอปฯ = react-native run-android
+    3.2)พิมใน teminal 
+        -react-native run-android
