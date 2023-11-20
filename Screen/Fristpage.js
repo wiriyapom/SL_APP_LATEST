@@ -19,7 +19,7 @@ function Fristpage() {
 
   return (
     <View style={styles.container}>
-      <Text>Welcome to Sign Languages Application</Text>
+      <Text style={styles.Texts}>Welcome to Sign Languages Application</Text>
       <Image source={require('./images/handsign.png')} style={styles.image} />
     </View>
   );
@@ -28,13 +28,16 @@ function Fristpage() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#99FFCC',
+    backgroundColor: '#437969',
     alignItems: 'center',
     justifyContent: 'center',
   },
   image: {
     marginBottom: 30,
   },
+  Texts:{
+    fontSize:20
+  }
 });
 
 export default Fristpage;

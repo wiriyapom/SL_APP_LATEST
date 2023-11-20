@@ -10,4 +10,4 @@
     3.1)รัน Android studio
         -คำสั่งรันโปรแกรมเพื่อใช้พัฒนาแอปฯ = react-native run-android
     3.2)พิมใน teminal 
-        -react-native run-android
+        -npx react-native run-android
